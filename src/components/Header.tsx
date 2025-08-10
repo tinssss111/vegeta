@@ -7,7 +7,7 @@ const Header: React.FC<ComponentProps> = ({ config }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
   return (
-    <header className="text-white px-4 py-3 bg-black/20 backdrop-blur-sm">
+    <header className="text-white px-4 py-2 bg-black/10 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">

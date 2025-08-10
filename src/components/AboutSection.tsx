@@ -172,7 +172,7 @@ export const AboutSection: React.FC<ComponentProps> = ({ config }) => {
             }`}
           >
             <div className="py-4 lg:py-8 text-center lg:text-left">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-4 text-[#0E20B2] font-bold">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-4 text-[#0E20B2]">
                 Vegeta Ultra Ego
               </h2>
               <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed font-mono mb-4">
