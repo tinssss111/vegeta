@@ -180,7 +180,7 @@ export const MainSection: React.FC<ComponentProps> = ({
             className="w-full my-20 max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] xl:max-w-[700px] h-auto text-main-image"
           />
           <div className="flex flex-col sm:flex-row justify-center w-full max-w-[350px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[540px] xl:max-w-[650px] items-center bg-white p-3 sm:p-4 border-[2px] border-b-[4px] border-[var(--black)] rounded-[8px] text-[16px] sm:text-[18px] xl:text-[20px] transition-all duration-300 ease-in-out hover:border-t-[4px] hover:border-b-[2px] hover:shadow-lg mt-[-30px] sm:mt-[-40px] lg:mt-[-50px] sm:mb-10">
-            <span className="text-[14px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-2xl hover:text-orange-500 transition-colors duration-300 break-all text-center sm:text-left mb-2 sm:mb-0">
+            <span className="text-[14px] sm:text-[15px] font-mono md:text-[15px] lg:text-[15px] xl:text-[18px] font-bold hover:text-orange-500 transition-colors duration-300 break-all text-center sm:text-left mb-2 sm:mb-0">
               {isLoading ? (
                 <div className="flex items-center justify-center">
                   <div className="w-4 h-4 border-2 border-gray-300 border-t-blue-600 rounded-full animate-spin mr-2"></div>
@@ -199,8 +199,8 @@ export const MainSection: React.FC<ComponentProps> = ({
                 isLoading
                   ? "bg-gray-400 cursor-not-allowed"
                   : copied
-                  ? "bg-amber-300 hover:bg-amber-400 text-white"
-                  : "bg-amber-500 hover:bg-amber-600"
+                  ? "bg-amber-300 hover:bg-amber-500 text-white"
+                  : "bg-amber-300 hover:bg-amber-500"
               }`}
             >
               {copied ? "Copied" : "Copy"}

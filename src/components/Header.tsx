@@ -29,21 +29,21 @@ const Header: React.FC<ComponentProps> = ({ config }) => {
           <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6">
             <a
               href="#about"
-              className="text-white hover:text-green-400 transition-colors duration-200 text-2xl xl:text-4xl"
+              className="text-white hover:text-amber-300 transition-colors duration-200 text-2xl xl:text-4xl"
             >
               About
             </a>
             <div className="w-0.5 h-8 xl:h-15 bg-white"></div>
             <a
               href="#evolution"
-              className="text-white hover:text-green-400 transition-colors duration-200 text-2xl xl:text-4xl"
+              className="text-white hover:text-amber-300 transition-colors duration-200 text-2xl xl:text-4xl"
             >
               Evolution
             </a>
             <div className="w-0.5 h-8 xl:h-15 bg-white"></div>
             <a
               href="#tokenomics"
-              className="text-white hover:text-green-400 transition-colors duration-200 text-2xl xl:text-4xl"
+              className="text-white hover:text-amber-300 transition-colors duration-200 text-2xl xl:text-4xl"
             >
               Tokenomics
             </a>
@@ -66,7 +66,7 @@ const Header: React.FC<ComponentProps> = ({ config }) => {
         <div className="lg:hidden">
           <button
             onClick={(): void => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="text-white hover:text-green-400 p-2"
+            className="text-white hover:text-amber-300 p-2"
           >
             <svg
               className="w-6 h-6"
@@ -96,21 +96,21 @@ const Header: React.FC<ComponentProps> = ({ config }) => {
             <a
               href="#about"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="text-white hover:text-green-400 transition-colors duration-200 text-2xl text-center"
+              className="text-white hover:text-amber-300 transition-colors duration-200 text-2xl text-center"
             >
               About
             </a>
             <a
               href="#evolution"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="text-white hover:text-green-400 transition-colors duration-200 text-2xl text-center"
+              className="text-white hover:text-amber-300 transition-colors duration-200 text-2xl text-center"
             >
               Evolution
             </a>
             <a
               href="#tokenomics"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="text-white hover:text-green-400 transition-colors duration-200 text-2xl text-center"
+              className="text-white hover:text-amber-300 transition-colors duration-200 text-2xl text-center"
             >
               Tokenomics
             </a>

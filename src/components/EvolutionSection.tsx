@@ -347,7 +347,7 @@ export const EvolutionSection: React.FC<ComponentProps> = ({}) => {
           }`}
         >
           <div className="max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto px-4">
-            <blockquote className="text-white text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl leading-relaxed font-bold italic">
+            <blockquote className="text-white text-base font-mono sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl leading-relaxed font-bold italic">
               &ldquo;You may have invaded my mind and my body, but there&apos;s
               one thing a Saiyan always keeps: his pride!&rdquo;
             </blockquote>
