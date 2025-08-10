@@ -173,7 +173,7 @@ export const TokenomicsSection: React.FC<ComponentProps> = ({}) => {
               {/* Ticker */}
               <div className="text-center mb-8 lg:mb-12">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-                  $VEGETA
+                  <span className="bangers-regular font-bold">$</span>VEGETA
                 </h2>
               </div>
 
@@ -184,7 +184,7 @@ export const TokenomicsSection: React.FC<ComponentProps> = ({}) => {
                     <span className="text-amber-300 text-lg sm:text-xl lg:text-2xl font-semibold">
                       Total Supply
                     </span>
-                    <span className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-mono">
+                    <span className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl bangers-regular">
                       968,686,868.8866
                     </span>
                     <span className="text-amber-300 text-lg sm:text-xl lg:text-2xl">
@@ -198,7 +198,7 @@ export const TokenomicsSection: React.FC<ComponentProps> = ({}) => {
                     <span className="text-amber-300 text-lg sm:text-xl lg:text-2xl font-semibold">
                       Max Supply
                     </span>
-                    <span className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl font-mono">
+                    <span className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl bangers-regular">
                       1,000,000,000
                     </span>
                     <span className="text-amber-300 text-lg sm:text-xl lg:text-2xl">

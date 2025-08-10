@@ -29,6 +29,11 @@
 html {
   scroll-behavior: smooth;
 }
+.bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 900;
+  font-style: normal;
+}
 
 body {
   background: var(--background);

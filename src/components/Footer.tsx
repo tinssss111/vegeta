@@ -277,7 +277,7 @@ export const Footer: React.FC<ComponentProps> = ({ config, isLoading }) => {
           <div className="footer-line" data-animation={true}>
             <span className="footer-line-icon-right" aria-hidden="true"></span>
           </div>
-          <p className="text-white text-sm sm:text-base lg:text-lg flex items-center font-mono justify-center mt-6 lg:mt-8">
+          <p className="text-white text-sm sm:text-base lg:text-lg flex items-center bangers-regular justify-center mt-6 lg:mt-8">
             © 2024 $VEGETA. All rights reserved.
           </p>
         </div>

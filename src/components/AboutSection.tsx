@@ -146,7 +146,7 @@ export const AboutSection: React.FC<ComponentProps> = ({ config }) => {
           }`}
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-amber-300">
-            About $VEGETA
+            About <span className="bangers-regular font-bold">$</span>VEGETA
           </h1>
         </div>
 
@@ -196,7 +196,7 @@ export const AboutSection: React.FC<ComponentProps> = ({ config }) => {
                 target="_bank"
                 className="w-full sm:w-auto bg-white border-2 border-white text-amber-400 font-bold py-3 px-6 lg:py-4 lg:px-8 text-lg lg:text-xl transition-all duration-300 ease-in-out hover:scale-105 active:scale-95 shadow-lg hover:shadow-purple-500/50 relative z-20"
               >
-                Buy $VEGETA🔥
+                Buy <span className="bangers-regular font-bold">$</span>VEGETA🔥
               </a>
 
               <a

@@ -57,7 +57,7 @@ const Header: React.FC<ComponentProps> = ({ config }) => {
               target="_bank"
               className="bg-transparent border-2 border-white text-white px-2 py-2 sm:px-4 sm:py-3 lg:px-6 lg:py-4 font-bold hover:bg-white hover:text-black transition-all duration-200 uppercase tracking-wide text-sm sm:text-lg lg:text-2xl xl:text-4xl"
             >
-              BUY $VEGETA🔥
+              BUY <span className="bangers-regular font-bold">$</span>VEGETA🔥
             </a>
           </div>
         </div>
@@ -120,7 +120,7 @@ const Header: React.FC<ComponentProps> = ({ config }) => {
                 target="_bank"
                 className="w-full bg-transparent border-2 border-white text-white px-4 py-3 font-bold hover:bg-white hover:text-black transition-all duration-200 uppercase tracking-wide text-lg"
               >
-                BUY $VEGETA🔥
+                BUY <span className="bangers-regular font-bold">$</span>VEGETA🔥
               </a>
             </div>
           </nav>
