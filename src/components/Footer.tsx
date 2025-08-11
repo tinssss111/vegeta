@@ -239,15 +239,19 @@ export const Footer: React.FC<ComponentProps> = ({ config, isLoading }) => {
                   rel="noopener noreferrer"
                   className="bg-transparent border-2 lg:border-3 border-white hover:bg-white hover:text-black transition-all duration-300 text-white font-bold py-2 px-6 lg:py-3 lg:px-10 text-xl lg:text-3xl inline-block"
                 >
-                  <FaTiktok />
+                  <img
+                    src="/images/pump.png"
+                    alt=""
+                    className="h-auto w-6 sm:w-8 md:w-10 lg:w-12 xl:w-14 object-contain"
+                  />
                 </a>
                 <a
                   href={config?.instagram_link || "#"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-transparent border-2 lg:border-3 border-white hover:bg-white hover:text-black transition-all duration-300 text-white font-bold py-2 px-6 lg:py-3 lg:px-10 text-xl lg:text-3xl inline-block"
+                  className="bg-transparent border-2 lg:border-3 border-white hover:bg-white hover:text-black transition-all duration-300 text-white py-2 px-6 lg:py-3 lg:px-10 text-xl lg:text-3xl inline-block"
                 >
-                  <FaInstagram />
+                  Swap
                 </a>
               </div>
             </div>
