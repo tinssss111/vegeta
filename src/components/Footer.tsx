@@ -292,7 +292,7 @@ export const Footer: React.FC<ComponentProps> = ({ config, isLoading }) => {
         </div>
 
         {/* Bottom Copyright */}
-        <div className="mt-12 pt-8 border-t border-white/20 text-center relative">
+        <div className="mt-12 pt-8 text-center relative">
           {/* Flying line animation */}
           <div className="footer-line" data-animation={true}>
             <span className="footer-line-icon-right" aria-hidden="true"></span>
