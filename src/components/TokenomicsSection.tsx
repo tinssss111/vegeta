@@ -240,7 +240,7 @@ export const TokenomicsSection: React.FC<ComponentProps> = ({}) => {
               alt="overlay"
               className="absolute inset-0 w-full h-full object-cover z-0"
             />
-            <div className="hidden lg:block absolute bottom-0 right-[-200px] -z-1">
+            <div className="hidden lg:block absolute bottom-0 right-[-95px] -z-1">
               <img src="/bgobject/section3.png" alt="" className="w-500 auto" />
             </div>
           </div>

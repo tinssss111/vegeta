@@ -28,10 +28,7 @@ export default function Home() {
   }
 
   return (
-    <div
-      className="bg-[url('/images/bg-stone.svg')]"
-      style={{ scrollBehavior: "smooth" }}
-    >
+    <div className="overflow-x-hidden" style={{ scrollBehavior: "smooth" }}>
       <div className="fixed top-0 left-0 right-0 z-50">
         <Header config={config} isLoading={isLoading} />
       </div>
