@@ -278,7 +278,7 @@ export const Footer: React.FC<ComponentProps> = ({ config, isLoading }) => {
             <span className="footer-line-icon-right" aria-hidden="true"></span>
           </div>
           <p className="text-white text-sm sm:text-base lg:text-lg flex items-center bangers-regular justify-center mt-6 lg:mt-8">
-            © 2024 $VEGETA. All rights reserved.
+            © 2025 $VEGETA. All rights reserved.
           </p>
         </div>
       </div>
