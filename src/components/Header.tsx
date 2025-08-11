@@ -13,10 +13,10 @@ const Header: React.FC<ComponentProps> = ({ config }) => {
         <div className="flex items-center">
           <a
             href=""
-            className="hover:opacity-80 transition-opacity duration-200"
+            className="hover:shadow-amber-200 transition-all duration-300 hover:scale-105"
           >
             <img
-              src="/images/logo.png"
+              src="/images/ngoc.png"
               alt="logo"
               className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full object-cover"
             />

@@ -261,9 +261,9 @@ export const Footer: React.FC<ComponentProps> = ({ config, isLoading }) => {
                 {/* Logo */}
                 <div className="text-center">
                   <img
-                    src="/images/logo.png"
+                    src="/images/ngoc.png"
                     alt=""
-                    className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-60 xl:h-60 rounded-full object-cover"
+                    className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-60 xl:h-60 transition-all duration-300 hover:scale-105"
                   />
                 </div>
               </a>
