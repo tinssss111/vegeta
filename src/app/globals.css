@@ -44,3 +44,9 @@ body {
   color: var(--foreground);
   font-family: "Saiyan";
 }
+.pump-icon {
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+  width: 40px;
+  height: auto;
+}

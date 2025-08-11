@@ -1,19 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
-import { FaInstagram, FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { ComponentProps } from "@/types/config";
 
 export const Footer: React.FC<ComponentProps> = ({ config, isLoading }) => {
   return (
-    <footer className="bg-[#FF3131] w-full py-8 lg:py-12 px-4 lg:px-6 xl:px-12 overflow-x-hidden">
+    <footer className="bg-[#FF3131] w-full py-8 lg:py-12 px-4 lg:px-6 xl:px-12 overflow-x-hidden relative">
       <style jsx>{`
         /* Footer flying line animation */
         .footer-line {
           position: absolute;
           right: 0;
-          top: 0;
+          bottom: 60px;
           z-index: 10;
           display: block;
           width: 100vw;
@@ -26,6 +25,7 @@ export const Footer: React.FC<ComponentProps> = ({ config, isLoading }) => {
           .footer-line {
             width: 100vw;
             height: min(46px, 5.4117647059vw);
+            bottom: 40px;
           }
         }
 
@@ -151,85 +151,103 @@ export const Footer: React.FC<ComponentProps> = ({ config, isLoading }) => {
             width: min(88px, 10.3529411765vw);
           }
         }
+
+        /* Fix responsive text sizes */
+        .footer-nav-text {
+          font-size: clamp(1.5rem, 4vw, 3rem);
+        }
+
+        @media (min-width: 1024px) {
+          .footer-nav-text {
+            font-size: clamp(2rem, 3vw, 4rem);
+          }
+        }
+
+        @media (min-width: 1280px) {
+          .footer-nav-text {
+            font-size: clamp(2.5rem, 4vw, 5rem);
+          }
+        }
       `}</style>
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 xl:gap-12 items-start">
+
+      <div className="container mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           {/* Left Column - Navigation Links */}
-          <div className="space-y-4 lg:space-y-6 text-center lg:text-left">
+          <div className="lg:col-span-4 space-y-6 text-center lg:text-left">
             <a
               href="#about"
-              className="flex items-center justify-center lg:justify-start space-x-2 lg:space-x-3 hover:opacity-80 transition-opacity duration-200"
+              className="flex items-center justify-center lg:justify-start space-x-3 transition-opacity duration-200 group"
             >
               <img
                 src="/images/ngoc.png"
                 alt=""
-                className="w-8 h-8 lg:w-10 lg:h-10"
+                className="w-8 h-8 lg:w-12 lg:h-12 flex-shrink-0"
               />
-              <h3 className="text-amber-300 text-2xl sm:text-3xl lg:text-4xl xl:text-6xl">
+              <h3 className="text-amber-300 footer-nav-text font-bold group-hover:scale-105 transition-transform duration-200 hover:text-white">
                 About
               </h3>
             </a>
 
             <a
               href="#evolution"
-              className="flex items-center justify-center lg:justify-start space-x-2 lg:space-x-3 hover:opacity-80 transition-opacity duration-200"
+              className="flex items-center justify-center lg:justify-start space-x-3 hover:text-white transition-opacity duration-200 group"
             >
               <img
                 src="/images/ngoc.png"
                 alt=""
-                className="w-8 h-8 lg:w-10 lg:h-10"
+                className="w-8 h-8 lg:w-12 lg:h-12 flex-shrink-0"
               />
-              <h3 className="text-amber-300 text-2xl sm:text-3xl lg:text-4xl xl:text-6xl">
+              <h3 className="text-amber-300 footer-nav-text font-bold group-hover:scale-105 transition-transform duration-200 hover:text-white">
                 Evolution
               </h3>
             </a>
           </div>
 
-          {/* Center Column - Tokenomics and Social Buttons */}
-          <div className="space-y-6 lg:space-y-8 text-center">
+          {/* Center Column - Tokenomics and Buy Now */}
+          <div className="lg:col-span-4 space-y-8 text-center">
             <a
               href="#tokenomics"
-              className="flex items-center justify-center space-x-2 lg:space-x-3 hover:opacity-80 transition-opacity duration-200"
+              className="flex items-center justify-center space-x-3 hover:text-white transition-opacity duration-200 group"
             >
               <img
                 src="/images/ngoc.png"
                 alt=""
-                className="w-8 h-8 lg:w-10 lg:h-10"
+                className="w-8 h-8 lg:w-12 lg:h-12 flex-shrink-0"
               />
-              <h3 className="text-amber-300 text-2xl sm:text-3xl lg:text-4xl xl:text-6xl">
+              <h3 className="text-amber-300 footer-nav-text font-bold group-hover:scale-105 transition-transform duration-200 hover:text-white">
                 Tokenomics
               </h3>
             </a>
 
-            <div className="space-y-4 lg:space-y-6">
+            <div className="space-y-6">
               <a
                 href={config?.pump_fun_url || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center space-x-2 lg:space-x-3 transition-all duration-300 hover:scale-110"
+                className="flex items-center justify-center space-x-3 transition-all duration-300 hover:scale-110 group"
               >
                 <img
                   src="/images/ngoc.png"
                   alt=""
-                  className="w-8 h-8 lg:w-10 lg:h-10"
+                  className="w-8 h-8 lg:w-12 lg:h-12 flex-shrink-0"
                 />
-                <h3 className="text-white text-2xl sm:text-3xl lg:text-4xl xl:text-6xl hover:text-amber-300">
+                <h3 className="text-white footer-nav-text font-bold group-hover:text-amber-300 transition-colors duration-200">
                   {isLoading ? "Loading..." : "Buynow"}
                 </h3>
                 <img
                   src="/images/ngoc.png"
                   alt=""
-                  className="w-8 h-8 lg:w-10 lg:h-10"
+                  className="w-8 h-8 lg:w-12 lg:h-12 flex-shrink-0"
                 />
               </a>
 
               {/* Social Buttons */}
-              <div className="flex justify-center space-x-3 lg:space-x-4">
+              <div className="flex justify-center items-center space-x-4 flex-wrap gap-y-3">
                 <a
                   href={config?.x_link || "#"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-transparent border-2 lg:border-3 border-white hover:bg-white hover:text-black transition-all duration-300 text-white font-bold py-2 px-6 lg:py-3 lg:px-10 text-xl lg:text-3xl inline-block"
+                  className="bg-transparent border-2 border-white hover:bg-white hover:text-black transition-all duration-300 text-white font-bold py-8 px-10 text-xl lg:text-2xl inline-flex items-center justify-center min-w-[60px] h-[50px]"
                 >
                   <FaXTwitter />
                 </a>
@@ -237,19 +255,19 @@ export const Footer: React.FC<ComponentProps> = ({ config, isLoading }) => {
                   href={config?.tiktok_link || "#"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-transparent border-2 lg:border-3 border-white hover:bg-white hover:text-black transition-all duration-300 text-white font-bold py-2 px-6 lg:py-3 lg:px-10 text-xl lg:text-3xl inline-block"
+                  className="border-2 border-white hover:bg-white hover:text-black transition-all duration-300 text-white font-bold py-8 px-10 text-xl lg:text-2xl inline-flex items-center justify-center min-w-[60px] h-[50px]"
                 >
                   <img
                     src="/images/pump.png"
-                    alt=""
-                    className="h-auto w-6 sm:w-8 md:w-10 lg:w-12 xl:w-14 object-contain"
+                    alt="pump"
+                    className="h-6 w-6 lg:h-8 lg:w-8 object-contain"
                   />
                 </a>
                 <a
                   href={config?.instagram_link || "#"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-transparent border-2 lg:border-3 border-white hover:bg-white hover:text-black transition-all duration-300 text-white py-2 px-6 lg:py-3 lg:px-10 text-xl lg:text-3xl inline-block"
+                  className="bg-transparent border-2 border-white hover:bg-white hover:text-black transition-all duration-300 text-white font-bold py-8 px-10 text-xl lg:text-2xl inline-flex items-center justify-center min-w-[60px] h-[50px]"
                 >
                   Swap
                 </a>
@@ -257,17 +275,15 @@ export const Footer: React.FC<ComponentProps> = ({ config, isLoading }) => {
             </div>
           </div>
 
-          {/* Right Column - Branding */}
-          <div className="flex justify-center lg:justify-end">
+          {/* Right Column - Logo */}
+          <div className="lg:col-span-4 flex justify-center lg:justify-end">
             <div className="relative">
-              {/* Circular Background */}
-              <a href="" className="">
-                {/* Logo */}
+              <a href="#" className="block">
                 <div className="text-center">
                   <img
-                    src="/images/ngoc.png"
-                    alt=""
-                    className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-60 xl:h-60 transition-all duration-300 hover:scale-105"
+                    src="/images/logo.png"
+                    alt="Vegeta Logo"
+                    className="w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 transition-all duration-300 hover:scale-105 mx-auto"
                   />
                 </div>
               </a>
@@ -276,12 +292,13 @@ export const Footer: React.FC<ComponentProps> = ({ config, isLoading }) => {
         </div>
 
         {/* Bottom Copyright */}
-        <div className="mt-8 lg:mt-12 pt-6 lg:pt-8 relative text-center overflow-hidden">
+        <div className="mt-12 pt-8 border-t border-white/20 text-center relative">
           {/* Flying line animation */}
           <div className="footer-line" data-animation={true}>
             <span className="footer-line-icon-right" aria-hidden="true"></span>
           </div>
-          <p className="text-white text-sm sm:text-base lg:text-lg flex items-center bangers-regular justify-center mt-6 lg:mt-8">
+
+          <p className="text-white text-base lg:text-lg font-bold relative z-20 bangers-regular">
             © 2025 $VEGETA. All rights reserved.
           </p>
         </div>

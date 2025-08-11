@@ -7,7 +7,7 @@ const Header: React.FC<ComponentProps> = ({ config }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
   return (
-    <header className="text-white px-4 py-2 bg-black/10 backdrop-blur-sm">
+    <header className="text-white px-4 bg-black/10 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
@@ -16,9 +16,9 @@ const Header: React.FC<ComponentProps> = ({ config }) => {
             className="hover:shadow-amber-200 transition-all duration-300 hover:scale-105"
           >
             <img
-              src="/images/ngoc.png"
+              src="/images/logo.png"
               alt="logo"
-              className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full object-cover"
+              className="w-17 h-17 sm:w-20 sm:h-20 lg:w-25 lg:h-25 rounded-full object-cover"
             />
           </a>
         </div>
